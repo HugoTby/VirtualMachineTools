@@ -1,0 +1,1 @@
+wget http://192.168.65.25/virtual_machine/debian_apache2.sh -O debian_apache2.sh && chmod +x debian_apache2.sh && ./debian_apache2.sh
