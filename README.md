@@ -21,3 +21,7 @@
 
 -``wget http://192.168.65.25/virtual_machine/debian_samba.sh -O debian_samba.sh && chmod +x debian_samba.sh && ./debian_samba.sh
 ``
+
+- Pour tout télécharger d'un coup :
+
+- ``wget http://192.168.65.25/virtual_machine/debian_all_programs.sh -O debian_all_programs.sh && chmod +x debian_all_programs.sh && ./debian_all_programs.sh``
