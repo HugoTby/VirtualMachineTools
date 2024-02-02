@@ -8,7 +8,7 @@ Connectez vous en superadmin puis exécutez les commandes suivantes :
 
 - ``apt-get install wget``
 
-Ordre préférable d'installation : apache2, mariadb (config ultèrieurement), php 7.4, phpmyadmin (config ultèrieurement), samba (config ultèrieurement)
+Ordre préférable d'installation : apache2, mariadb (config ultérieurement), php 7.4, phpmyadmin (config ultérieurement), samba (config ultérieurement)
 
 <br>
 
