@@ -3,7 +3,7 @@
 </div>
 
 <br>
-Il est nécessaire d'installer ``wget`` pour pouvoir utiliser les commandes suivantes.
+Il est nécessaire d'installer wget pour pouvoir utiliser les commandes suivantes.
 Connectez vous en superadmin puis exécutez les commandes suivantes :
 
 - ``apt-get install wget``
