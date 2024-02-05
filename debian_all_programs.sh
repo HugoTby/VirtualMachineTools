@@ -2,7 +2,6 @@ apt-get update
 apt-get -y install apache2
 apt-get -y install mariadb-server
 echo "root" | mysql_secure_installation <<EOF
-
 y
 n
 n
@@ -17,8 +16,8 @@ wget -O /var/www/html/index.php http://192.168.65.25/virtual_machine/index.php
 service apache2 restart
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.tar.gz
 tar xvf phpMyAdmin-5.2.1-all-languages.tar.gz
-echo "root"
 rm phpMyAdmin-5.2.1-all-languages.tar.gz
+echo "root"
 mv phpMyAdmin-5.2.1-all-languages/ phpmyadmin
 mysql -u root -p <<EOF
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');
