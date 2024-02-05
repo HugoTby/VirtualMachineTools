@@ -17,6 +17,7 @@ wget -O /var/www/html/index.php http://192.168.65.25/virtual_machine/index.php
 service apache2 restart
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.tar.gz
 tar xvf phpMyAdmin-5.2.1-all-languages.tar.gz
+echo "root"
 rm phpMyAdmin-5.2.1-all-languages.tar.gz
 mv phpMyAdmin-5.2.1-all-languages/ phpmyadmin
 mysql -u root -p <<EOF
