@@ -11,3 +11,5 @@ y
 y
 y
 EOF
+
+systemctl status mariadb
