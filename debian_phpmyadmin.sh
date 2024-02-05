@@ -12,3 +12,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRAN
 FLUSH PRIVILEGES;
 quit
 EOF
+
+cd /etc/mysql/mariadb.conf.d
+cp /etc/mysql/mariadb.conf.d/50-server.cnf /etc/mysql/mariadb.conf.d/50-server.cnf.old
+wget -O /etc/samba/smb.conf http://192.168.65.25/virtual_machine/50-server.cnf
+
+service mariadb restart
