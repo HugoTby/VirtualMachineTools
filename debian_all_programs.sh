@@ -17,8 +17,8 @@ service apache2 restart
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.tar.gz
 tar xvf phpMyAdmin-5.2.1-all-languages.tar.gz
 rm phpMyAdmin-5.2.1-all-languages.tar.gz
-echo "root"
 mv phpMyAdmin-5.2.1-all-languages/ phpmyadmin
+echo "root"
 mysql -u root -p <<EOF
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
@@ -35,4 +35,5 @@ cp /etc/samba/smb.conf /etc/samba/smb.conf.old
 wget -O /etc/samba/smb.conf http://192.168.65.25/virtual_machine/smb.conf
 service smbd restart
 (echo "root"; sleep 1; echo "root") | smbpasswd -a root
+service smbd restart
 apt-get update
